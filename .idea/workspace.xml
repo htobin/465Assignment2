@@ -55,10 +55,10 @@
     </key>
   </component>
   <component name="RunManager" selected="Node.js.ass2page1.js">
-    <configuration name="ass2.coffee" type="NodeJSConfigurationType" nameIsGenerated="true" node-parameters="--require coffeescript/register" path-to-js-file="$PROJECT_DIR$/coffee/ass2.coffee" working-dir="$PROJECT_DIR$/coffee">
+    <configuration name="ass2.coffee" type="NodeJSConfigurationType" factoryName="Node.js" nameIsGenerated="true" node-parameters="--require coffeescript/register" path-to-js-file="$PROJECT_DIR$/coffee/ass2.coffee" working-dir="$PROJECT_DIR$/coffee">
       <method v="2" />
     </configuration>
-    <configuration name="ass2page1.js" type="NodeJSConfigurationType" path-to-node="C:/node.js/node" nameIsGenerated="true" path-to-js-file="ass2page1.js" working-dir="$PROJECT_DIR$/js">
+    <configuration name="ass2page1.js" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/node.js/node" nameIsGenerated="true" path-to-js-file="ass2page1.js" working-dir="$PROJECT_DIR$/js">
       <method v="2" />
     </configuration>
     <list>

@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a0962cd-02fb-4774-840c-3fc3981927f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ass2group1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/roster.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roster.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/ass2page2.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/ass2page2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/ass2group1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/a2.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

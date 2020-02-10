@@ -77,7 +77,7 @@ $(function () {
     $.getJSON("assets/roster.json", function (json) {
         roster = json;
         rosterClone = roster.slice(0, roster.length);
-        $('#current').text(`Current players: ${rosterClone.length}`);
+        $('#current').text(`Current Players: ${rosterClone.length}`);
     });
 
 

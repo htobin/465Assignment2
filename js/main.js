@@ -60,7 +60,7 @@ $(function () {
 
 
     // get json file list into variable roster
-    $.getJSON("../assets/roster.json", function (json) {
+    $.getJSON("assets/roster.json", function (json) {
         roster = json;
         rosterClone = roster.slice(0, roster.length);
         $('#current').text(`Current players: ${rosterClone.length}`);

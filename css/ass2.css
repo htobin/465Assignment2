@@ -1,4 +1,4 @@
-/*Body css created by Jan Stelovsky*/
+/*CSS created by Jan Stelovsky, Hoku added a few lines here and there*/
 body {
     font-family: Helvetica, sans-serif;
     text-align: center;
@@ -6,10 +6,9 @@ body {
     background-repeat: repeat-y;
     background-size:cover;
     background-position: center,center;
-    /*Hokucreated this line*/
+
     background-color: #6a6c6a;
 }
-/*h2,div css created by Jan Stelovsky*/
 h2, div {
     display: inline-block;
     margin-right: 30px;
@@ -48,10 +47,7 @@ h2{
     background-color: #6a6c6a;
 }
 
-
-
-
-
+/*Side nav code form w3, modified by Hoku Tobin*/
 /* Fixed sidenav, full height */
 .sidenav {
     height: 180px;

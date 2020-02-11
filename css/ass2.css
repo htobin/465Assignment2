@@ -2,6 +2,7 @@ body {
     font-family: Helvetica, sans-serif;
     text-align: center;
     padding-left: 200px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/AmFBfield.svg/2000px-AmFBfield.svg.png);
 }
 h2, div {
     display: inline-block;
@@ -76,3 +77,4 @@ ul {
     padding-right: 8px;
     color:white;
 }
+

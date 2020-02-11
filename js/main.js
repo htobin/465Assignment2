@@ -108,13 +108,16 @@ $(function () {
             maxSportSize = 18
         }
 
-        //sport name text
+        //sport name text and background
         if (selectedSport == 'Football') {
             $('#sportName').text(`Football`);
+            document.body.style.backgroundImage = "url(assets/football.png)";
             } else if (selectedSport == 'Basketball') {
                 $('#sportName').text(`Basketball`);
+                document.body.style.backgroundImage = "url(assets/basketball.png)";
             } else if (selectedSport == 'Baseball') {
                 $('#sportName').text(`Baseball`);
+                document.body.style.backgroundImage = "url(assets/baseball.png)";
             }
 
 

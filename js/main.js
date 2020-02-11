@@ -1,3 +1,4 @@
+//entire function created by Hoku Tobin
 function GenerateTeams(maxSportSize, selectedSport, roster) {
     //create all of the lists that will be used
     var team1 = [];
@@ -59,11 +60,15 @@ function GenerateTeams(maxSportSize, selectedSport, roster) {
             benchlist.append(`<li>${bench[i]}</li>`);
         }
     }
+    if(bench.length == 0)
+    {
+        benchlist.append(`<li>Extra player list will go here</li>`);
+    }
 
 
 }
 
-//main function
+//main function created by Hoku Tobin
 $(function () {
     var roster = [];
     var teamSelection = $('#sports');
@@ -77,7 +82,7 @@ $(function () {
     $.getJSON("assets/roster.json", function (json) {
         roster = json;
         rosterClone = roster.slice(0, roster.length);
-        $('#current').text(`Current Players: ${rosterClone.length}`);
+        $('#current').text(`Players in Roster: ${rosterClone.length}`);
     });
 
 
@@ -91,39 +96,37 @@ $(function () {
             $('#team1 ul').empty();
             $('#team2 ul').empty();
             $('#bench').empty();
+            $('#sportName').text(`Sport Name`);
             //create list place holders
             $('#team1 ul').append(`<li>Team 1 list will go here</li>`);
             $('#team2 ul').append(`<li>Team 2 list will go here</li>`);
             $('#bench').append(`<li>Extra player list will go here</li>`);
+            $('body').css("background-color","#6a6c6a");
+            $('body').css("background-image","none");
             alert('Please select a sport');
             return
         }
 
         //maximum players on the field/court
         if (selectedSport == 'Football') {
+            $('#sportName').text(`Football`);
+
+            //pictures added to assets by Leah
+            $('body').css("background-image", "url(assets/football.jpg)");
             maxSportSize = 22;
         } else if (selectedSport == 'Basketball') {
+            $('#sportName').text(`Basketball`);
+
+            //pictures added to assets by Leah
+            $('body').css("background-image", "url(assets/basketball.jpg)");
             maxSportSize = 10;
         } else if (selectedSport == 'Baseball') {
+            $('#sportName').text(`Baseball`);
+
+            //pictures added to assets by Leah
+            $('body').css("background-image", "url(assets/baseball.jpg)");
             maxSportSize = 18
         }
-
-        //sport name text and background
-        if (selectedSport == 'Football') {
-            $('#sportName').text(`Football`);
-            document.body.style.backgroundImage = "url(assets/football.png)";
-            } else if (selectedSport == 'Basketball') {
-                $('#sportName').text(`Basketball`);
-                document.body.style.backgroundImage = "url(assets/basketball.png)";
-            document.body.style.backgroundSize = 'fit';
-            } else if (selectedSport == 'Baseball') {
-                $('#sportName').text(`Baseball`);
-                document.body.style.backgroundImage = "url('assets/baseball.png')";
-            document.body.style.backgroundSize = 'auto';
-
-            }
-
-
         GenerateTeams(maxSportSize, selectedSport, roster);
 
     });

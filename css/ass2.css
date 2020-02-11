@@ -1,22 +1,29 @@
+/*Body css created by Jan Stelovsky*/
 body {
     font-family: Helvetica, sans-serif;
     text-align: center;
     padding-left: 200px;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size:cover;
     background-position: center,center;
+    /*Hokucreated this line*/
+    background-color: #6a6c6a;
 }
+/*h2,div css created by Jan Stelovsky*/
 h2, div {
     display: inline-block;
     margin-right: 30px;
 }
+
 table {
     border-collapse: collapse;
+    background-color: #6a6c6a;
 
 }
 th, td {
     padding: 3px 5px;
     border: 1px solid gray;
+    color:white;
 }
 td {
     vertical-align: top;
@@ -31,19 +38,29 @@ select{
     width: 160px;
 }
 
+h3{
+    color: white;
+    background-color: #6a6c6a;
+}
+h2{
+    color: white;
+    border: 3px solid gray;
+    background-color: #6a6c6a;
+}
+
 
 
 
 
 /* Fixed sidenav, full height */
 .sidenav {
-    height: 160px;
+    height: 180px;
     width: 200px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: black;
+    background-color: #6a6c6a;
     overflow-x: hidden;
     padding-top: 20px;
 

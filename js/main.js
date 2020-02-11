@@ -115,9 +115,12 @@ $(function () {
             } else if (selectedSport == 'Basketball') {
                 $('#sportName').text(`Basketball`);
                 document.body.style.backgroundImage = "url(assets/basketball.png)";
+            document.body.style.backgroundSize = 'fit';
             } else if (selectedSport == 'Baseball') {
                 $('#sportName').text(`Baseball`);
-                document.body.style.backgroundImage = "url(assets/baseball.png)";
+                document.body.style.backgroundImage = "url('assets/baseball.png')";
+            document.body.style.backgroundSize = 'auto';
+
             }
 
 

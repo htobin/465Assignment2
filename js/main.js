@@ -108,6 +108,16 @@ $(function () {
             maxSportSize = 18
         }
 
+        //sport name text
+        if (selectedSport == 'Football') {
+            $('#sportName').text(`Football`);
+            } else if (selectedSport == 'Basketball') {
+                $('#sportName').text(`Basketball`);
+            } else if (selectedSport == 'Baseball') {
+                $('#sportName').text(`Baseball`);
+            }
+
+
         GenerateTeams(maxSportSize, selectedSport, roster);
 
     });

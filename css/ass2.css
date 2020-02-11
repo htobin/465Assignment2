@@ -2,7 +2,9 @@ body {
     font-family: Helvetica, sans-serif;
     text-align: center;
     padding-left: 200px;
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/AmFBfield.svg/2000px-AmFBfield.svg.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center,center;
 }
 h2, div {
     display: inline-block;

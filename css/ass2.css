@@ -3,8 +3,8 @@ body {
     font-family: Helvetica, sans-serif;
     text-align: center;
     padding-left: 200px;
-    background-repeat: repeat-y;
-    background-size:cover;
+    background-repeat: no-repeat;
+    background-size:auto;
     background-position: center,center;
 
     background-color: #6a6c6a;
@@ -80,7 +80,7 @@ h2{
 /* On mouse-over */
 .sidenav button:hover, .sidenav a:hover, .dropdown-btn:hover {
     color: #818181 ;
-}        
+}
 
 
 /* Add an active class to the active dropdown button */

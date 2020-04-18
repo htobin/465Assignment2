@@ -4,6 +4,8 @@ function GenerateTeams(maxSportSize, selectedSport, roster) {
     var team1 = [];
     var team2 = [];
     var bench = [];
+
+    //create calls to HTML
     var team1list = $('#team1 ul');
     var team2list = $('#team2 ul');
     var benchlist = $('#bench');
@@ -16,7 +18,7 @@ function GenerateTeams(maxSportSize, selectedSport, roster) {
     //create a clone of the original roster, so that way it doesn't get edited
     var rosterClone = roster.slice(0, roster.length);
 
-    //check roster against sport size
+    //check roster against sport size, make sure that the there are enough players
     if (rosterClone.length < maxSportSize) {
 
         //roster size is too small, create placeholders and prompt the user to use it again
@@ -60,8 +62,7 @@ function GenerateTeams(maxSportSize, selectedSport, roster) {
             benchlist.append(`<li>${bench[i]}</li>`);
         }
     }
-    if(bench.length == 0)
-    {
+    if (bench.length == 0) {
         benchlist.append(`<li>Extra player list will go here</li>`);
     }
 
@@ -70,12 +71,16 @@ function GenerateTeams(maxSportSize, selectedSport, roster) {
 
 //main function created by Hoku Tobin
 $(function () {
+
+    //roster arrays and other information that determines if the roster is valid for the sport
     var roster = [];
-    var teamSelection = $('#sports');
-    var randomButton = $('#random');
     var maxSportSize = 0;
     var selectedSport = "";
     var rosterClone = [];
+
+    //HTML calls to the buttons on the homepage
+    var teamSelection = $('#sports');
+    var randomButton = $('#random');
 
 
     // get json file list into variable roster
@@ -101,8 +106,8 @@ $(function () {
             $('#team1 ul').append(`<li>Team 1 list will go here</li>`);
             $('#team2 ul').append(`<li>Team 2 list will go here</li>`);
             $('#bench').append(`<li>Extra player list will go here</li>`);
-            $('body').css("background-color","#6a6c6a");
-            $('body').css("background-image","none");
+            $('body').css("background-color", "#6a6c6a");
+            $('body').css("background-image", "none");
             alert('Please select a sport');
             return
         }
@@ -114,29 +119,33 @@ $(function () {
             //pictures added to assets by Leah
             $('body').css("background-image", "url(assets/football.jpg)");
             maxSportSize = 22;
-        } else if (selectedSport == 'Basketball') {
+        }
+
+        else if (selectedSport == 'Basketball') {
             $('#sportName').text(`Basketball`);
 
             //pictures added to assets by Leah
             $('body').css("background-image", "url(assets/basketball.jpg)");
             maxSportSize = 10;
-        } else if (selectedSport == 'Baseball') {
+        }
+
+        else if (selectedSport == 'Baseball') {
             $('#sportName').text(`Baseball`);
 
             //pictures added to assets by Leah
             $('body').css("background-image", "url(assets/baseball.jpg)");
             maxSportSize = 18
         }
+        //create the page and the roster
         GenerateTeams(maxSportSize, selectedSport, roster);
 
     });
 
     randomButton.on('click', function () {
-        if(teamSelection.val() == ''){
+        if (teamSelection.val() == '') {
             return;
         }
         GenerateTeams(maxSportSize, selectedSport, roster)
     })
-
 
 });
